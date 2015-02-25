@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
 {
-    class WayPoint
+    public class WayPoint
     {
         public string Name { get; set; } 
         public double Longitude { get; set; } 
@@ -16,7 +16,7 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
         { 
             Name = _name; 
             Latitude = _latitude; 
-            Longitude = _longitude; 
+            Longitude = _longitude;
         }
     }
 }
