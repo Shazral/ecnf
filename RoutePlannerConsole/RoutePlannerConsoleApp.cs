@@ -20,6 +20,12 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerConsole
             var tripolis = new WayPoint("Tripolis", 32.808714, 13.106475);
             double dist = bern.Distance(tripolis);
             Console.WriteLine(dist);
+            string st = "ab     c";
+            Console.WriteLine(st[0].Equals("a"));
+            Console.WriteLine(st[0]);
+            Cities cListe = new Cities();
+            int i = cListe.ReadCities("citiesTestDataLab2.txt");
+            Console.WriteLine(i);
             Console.ReadKey();
         }
 
