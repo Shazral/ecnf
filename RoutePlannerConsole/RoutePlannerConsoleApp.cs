@@ -26,6 +26,8 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerConsole
             Cities cListe = new Cities();
             int i = cListe.ReadCities("citiesTestDataLab2.txt");
             Console.WriteLine(i);
+            int count = cListe[0];
+            Console.WriteLine("IndexerTest: " + count);
             Console.ReadKey();
         }
 
