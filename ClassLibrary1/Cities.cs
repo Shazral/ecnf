@@ -18,18 +18,28 @@ namespace Fhnw.Ecnf.RoutePlanner.RoutePlannerLib
             ListOfCities = new List<City>();
         }
 
-        public int this[int position]   // AUfgabe 2.c) <- Implementierung unklar
+        public int Count
+        {
+            get
+            {
+                return ListOfCities.Count;
+            }
+        }
+
+        public City this[int position]   // AUfgabe 2.c) <- Implementierung unklar
         {
             get 
             {
-                int count = ListOfCities.Count;
-                if (count < 0 || position >= count) return 0;
+                if (ListOfCities.Count < 0 || position >= ListOfCities.Count) return null;
                 else
                 {   
-                    return counter;
+                    return ListOfCities[position];
                 }
             }
-            set { }
+            set 
+            {
+                ListOfCities[position] = value;
+            }
         }
 
         public List<City> FindNeighbours(WayPoint location, double distance)
